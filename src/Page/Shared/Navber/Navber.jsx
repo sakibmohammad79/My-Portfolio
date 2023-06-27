@@ -1,6 +1,7 @@
 
 import { FaDownload } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { saveAs } from 'file-saver';
 
 
 const Navber = () => {
@@ -20,6 +21,23 @@ const Navber = () => {
           </li>
         </>
     );
+
+   
+    const handleDownloadResume = () => {
+      const resumeUrl = '/src/assets/Md Sakib_Mern Stack Developer(resume).pdf (2).pdf'; // Replace with the actual path to your resume file
+  
+      // Fetch the resume file
+      fetch(resumeUrl)
+        .then((response) => response.blob())
+        .then((blob) => {
+          // Save the resume file using FileSaver.js
+          saveAs(blob, 'resume.pdf');
+        })
+        .catch((error) => {
+          console.error('Error downloading the resume:', error);
+        });
+    };
+
     return (
         <div className="navbar pt-4 fixed md:pt-8 px-4 md:px-16 text-white">
       <div className="navbar-start">
@@ -42,18 +60,18 @@ const Navber = () => {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            className="text-secondary menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             {navItem}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-4xl md:text-5xl">Portfolio</a>
+        <Link to="/" className="btn btn-ghost normal-case text-3xl md:text-5xl text-secondary font-bold">Portfolio</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1">{navItem}</ul>
+        <ul className="menu menu-horizontal px-1 text-secondary font-extrabold">{navItem}</ul>
       </div>
-      <div className="navbar-end">
-        <button className="btn btn-outline btn-secondary">
+      <div className="navbar-end ">
+        <button onClick={handleDownloadResume} className="btn btn-outline btn-secondary font-bold">
           Resume<FaDownload></FaDownload>
         </button>
       </div>

@@ -1,9 +1,12 @@
 import { FaFacebook, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import Typed from 'react-typed';
 import Jump from 'react-reveal/Jump';
-import { Link } from "react-router-dom";
+
 const Banner = () => {
-  
+  const linkedinProfileUrl = 'https://www.linkedin.com/in/md-sakib-067392278/'; 
+  const gitHubProfileUrl = 'https://github.com/sakibmohammad79'; 
+  const facebookProfileUrl = 'https://www.facebook.com/profile.php?id=100011373134077'; 
+
   return (
     <div>
 
@@ -33,9 +36,11 @@ const Banner = () => {
             and achieve success in my life.
           </p>
           <div className="flex gap-4 text-secondary">
-            <Link><FaLinkedin style={{width: '2.3rem', height: '2.3rem'}}/></Link>
-            <Link><FaGithubSquare style={{width: '2.3rem', height: '2.3rem'}}/></Link>
-            <Link><FaFacebook style={{width: '2.3rem', height: '2.3rem'}}/></Link>
+
+            <a href={linkedinProfileUrl} target="_blank" rel="noopener noreferrer"><FaLinkedin style={{width: '2.3rem', height: '2.3rem'}}/></a>
+
+            <a href={gitHubProfileUrl} target="_blank" rel="noopener noreferrer"><FaGithubSquare style={{width: '2.3rem', height: '2.3rem'}}/></a>
+            <a href={facebookProfileUrl} target="_blank" rel="noopener noreferrer"><FaFacebook style={{width: '2.3rem', height: '2.3rem'}}/></a>
             
           </div>
         </div>
