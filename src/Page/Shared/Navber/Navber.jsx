@@ -1,24 +1,27 @@
+
+import { FaDownload } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
+
 const Navber = () => {
-  const navItem = (
-    <>
-      <li>
-        <Link className="font-bold uppercase">Home</Link>
-      </li>
-      <li>
-        <Link className="font-bold uppercase">Skill</Link>
-      </li>
-      <li>
-        <Link className="font-bold uppercase">Projects</Link>
-      </li>
-      <li>
-        <Link className="font-bold uppercase">About me</Link>
-      </li>
-    </>
-  );
-  return (
-    <div style={{height: '100px'}} className="navbar px-8  md:px-16 text-white fixed z-10 bg-black bg-opacity-0">
+    const navItem = (
+        <>
+          <li>
+            <Link className="font-bold uppercase">Home</Link>
+          </li>
+          <li>
+            <Link to='/skill' className="font-bold uppercase">Skill</Link>
+          </li>
+          <li>
+            <Link to='/projects' className="font-bold uppercase">Projects</Link>
+          </li>
+          <li>
+            <Link to='/contact' className="font-bold uppercase">Contact</Link>
+          </li>
+        </>
+    );
+    return (
+        <div className="navbar pt-4 fixed md:pt-8 px-4 md:px-16 text-white">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -44,18 +47,18 @@ const Navber = () => {
             {navItem}
           </ul>
         </div>
-        <a className="btn btn-ghost normal-case text-5xl">Portfolio</a>
+        <a className="btn btn-ghost normal-case text-4xl md:text-5xl">Portfolio</a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{navItem}</ul>
       </div>
       <div className="navbar-end">
         <button className="btn btn-outline btn-secondary">
-          Let's Connect
+          Resume<FaDownload></FaDownload>
         </button>
       </div>
     </div>
-  );
+    );
 };
 
 export default Navber;

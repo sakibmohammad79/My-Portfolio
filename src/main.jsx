@@ -8,7 +8,7 @@ import router from './routes/Router.jsx';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-   <div>
+   <div className='min-h-screen'>
    <RouterProvider router={router} />
    </div>
   </React.StrictMode>,
