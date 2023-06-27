@@ -1,6 +1,10 @@
 import { FaFacebook, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import Typed from 'react-typed';
 import Jump from 'react-reveal/Jump';
+import Skill from "../Skill/Skill";
+import Projects from "../Projects/Projects";
+import Contact from "../Contact/Contact";
+import Footer from "../Shared/Footer/Footer";
 
 const Banner = () => {
   const linkedinProfileUrl = 'https://www.linkedin.com/in/md-sakib-067392278/'; 
@@ -56,7 +60,10 @@ const Banner = () => {
         </Jump>
       </div>
     </div>
-
+    <Skill></Skill>
+    <Projects></Projects>
+    <Contact></Contact>
+    <Footer></Footer>
     </div>
   );
 };
