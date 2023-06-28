@@ -1,7 +1,7 @@
 const Contact = () => {
   return (
     <div className="bg-[url('https://i.postimg.cc/fRh9jkB2/pexels-jakub-novacek-924824.jpg')] bg-cover bg-center min-h-screen">
-      <div className="px-6 md:px-24 pt-24 md:pt-28 pb-4">
+      <div className="px-6 md:px-24 pt-24 md:pt-28 pb-12">
         <div className="">
           <h3 className="text-3xl uppercase font-bold text-secondary text-center">
             Contact Me

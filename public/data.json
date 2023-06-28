@@ -1,141 +1,131 @@
-const projects = [
-    {
-      projectName: "FurbLock",
-      projectImage: "https://i.postimg.cc/8zTwBMKp/screencapture-wolves-sports-web-app-2023-06-17-17-25-14.png",
-      serverLink: "https://github.com/sakibmohammad79/sports-academy-server",
-      clientLink: "https://github.com/sakibmohammad79/sports-academy",
-      liveLink: "https://wolves-sports.web.app",
-      features: [
-        "Secure User Authentication: Utilize Firebase authentication to ensure secure user registration and login.",
-        "Role-Based Access Control (RBAC): Implement Admin, Instructor, and Student roles with personalized access and permissions.",
-        "Dynamic Content with React Router: Utilize React Router for seamless navigation and dynamic rendering of components."
-      ],
-      rating: 4.5,
-      technology: [
-        "React",
-        "Express.js",
-        "MongoDB",
-        "Firebase Authentication",
-        "React Router",
-        "Tailwind CSS",
-        "Stripe"
-      ]
-    },
-    {
-      projectName: "ToyTown",
-      projectImage: "project2.jpg",
-      serverLink: "https://github.com/sakibmohammad79/Assignment11-server",
-      clientLink: "https://github.com/sakibmohammad79/Assignment11-client",
-      liveLink: "https://toy-marketplace-ass11.web.app",
-      features: [
-        "React Single Page Application: Utilize React to create a seamless and interactive single page application with dynamic content rendering using React Router.",
-        "MongoDB Data Collection: Employ MongoDB for efficient data collection and storage, enabling effective management of data within the application.",
-        "Private Page with User Authentication: Implement a private page that requires user authentication, ensuring secure access and protecting sensitive content from unauthorized users."
-      ],
-      rating: 4.2,
-      technology: [
-        "React.Js",
-        "Express.js",
-        "MongoDB",
-        "Firebase Authentication",
-        "React Router",
-        "Tailwind CSS",
-      ]
-    },
-    {
-      projectName: "Recipe Hunting",
-      projectImage: "project3.jpg",
-      serverLink: "https://github.com/sakibmohammad79/Assignment10-server",
-      clientLink: "https://github.com/sakibmohammad79/Assignment10-client",
-      liveLink: "https://assignment10-recipe-hunting.web.app",
-      features: [
-        "Dynamic Single Page Application: Develop a dynamic single page application using React and React Router, allowing seamless navigation and enhanced user experience.",
-        "Efficient Data Management with Express.js: Utilize Express.js to integrate a basic server and store data, ensuring efficient handling and retrieval of information from the server.",
-        "This application make by react js.
-        This is single page application
-        Use the react router for dynamic application
-        Use The many react hook useState, useEffect, useLoaderData etc.
-        Use the express js for data storage and integrate the basic server site
-        All data are load from server site
-        Create a Private page user do not use this page without Login"
-      ],
-      rating: 4.7,
-      technology: [
-        "React",
-        "Express.js",
-        "MongoDB",
-        "Firebase Authentication",
-        "React Router",
-        "Tailwind CSS",
-        "Stripe"
-      ]
-    },
-    {
-      projectName: "Project 4",
-      projectImage: "project4.jpg",
-      serverLink: "https://example.com/server/project4",
-      clientLink: "https://example.com/client/project4",
-      liveLink: "https://example.com/live/project4",
-      features: [
-        "Feature 1",
-        "Feature 2",
-        "Feature 3"
-      ],
-      rating: 4.3,
-      technology: [
-        "React",
-        "Express.js",
-        "MongoDB",
-        "Firebase Authentication",
-        "React Router",
-        "Tailwind CSS",
-        "Stripe"
-      ]
-    },
-    {
-      projectName: "Project 5",
-      projectImage: "project5.jpg",
-      serverLink: "https://example.com/server/project5",
-      clientLink: "https://example.com/client/project5",
-      liveLink: "https://example.com/live/project5",
-      features: [
-        "Feature 1",
-        "Feature 2",
-        "Feature 3"
-      ],
-      rating: 4.6,
-      technology: [
-        "React",
-        "Express.js",
-        "MongoDB",
-        "Firebase Authentication",
-        "React Router",
-        "Tailwind CSS",
-        "Stripe"
-      ]
-    },
-    {
-      projectName: "Project 6",
-      projectImage: "project6.jpg",
-      serverLink: "https://example.com/server/project6",
-      clientLink: "https://example.com/client/project6",
-      liveLink: "https://example.com/live/project6",
-      features: [
-        "Feature 1",
-        "Feature 2",
-        "Feature 3"
-      ],
-      rating: 4.4,
-      technology: [
-        "React",
-        "Express.js",
-        "MongoDB",
-        "Firebase Authentication",
-        "React Router",
-        "Tailwind CSS",
-        "Stripe"
-      ]
-    }
-  ];
-  
-  
+[
+  {
+    "projectName": "FurbLock",
+    "projectImage": "https://i.postimg.cc/8zTwBMKp/screencapture-wolves-sports-web-app-2023-06-17-17-25-14.png",
+    "serverLink": "https://github.com/sakibmohammad79/sports-academy-server",
+    "clientLink": "https://github.com/sakibmohammad79/sports-academy",
+    "liveLink": "https://wolves-sports.web.app",
+    "features": [
+      "Secure User Authentication: Utilize Firebase authentication to ensure secure user registration and login.",
+      "Role-Based Access Control (RBAC): Implement Admin, Instructor, and Student roles with personalized access and permissions.",
+      "Dynamic Content with React Router: Utilize React Router for seamless navigation and dynamic rendering of components."
+    ],
+    "rating": 4.5,
+    "technology": [
+      "React",
+      "Express.js",
+      "MongoDB",
+      "Firebase Authentication",
+      "React Router",
+      "Tailwind CSS",
+      "Stripe"
+    ]
+  },
+  {
+    "projectName": "ToyTown",
+    "projectImage": "https://i.postimg.cc/Cxtcxc86/screencapture-localhost-5174-2023-06-28-15-39-44.png",
+    "serverLink": "https://github.com/sakibmohammad79/Assignment11-server",
+    "clientLink": "https://github.com/sakibmohammad79/Assignment11-client",
+    "liveLink": "https://toy-marketplace-ass11.web.app",
+    "features": [
+      "React Single Page Application: Utilize React to create a seamless and interactive single page application with dynamic content rendering using React Router.",
+      "MongoDB Data Collection: Employ MongoDB for efficient data collection and storage, enabling effective management of data within the application.",
+      "Private Page with User Authentication: Implement a private page that requires user authentication, ensuring secure access and protecting sensitive content from unauthorized users."
+    ],
+    "rating": 4.2,
+    "technology": [
+      "React.Js",
+      "Express.js",
+      "MongoDB",
+      "Firebase Authentication",
+      "React Router",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    "projectName": "Recipe Hunting",
+    "projectImage": "https://i.postimg.cc/GtqQwKrK/screencapture-localhost-5174-2023-06-28-15-43-54.png",
+    "serverLink": "https://github.com/sakibmohammad79/Assignment10-server",
+    "clientLink": "https://github.com/sakibmohammad79/Assignment10-client",
+    "liveLink": "https://assignment10-recipe-hunting.web.app",
+    "features": [
+      "Dynamic Single Page Application: Develop a dynamic single page application using React and React Router, allowing seamless navigation and enhanced user experience.",
+      "Efficient Data Management with Express.js: Utilize Express.js to integrate a basic server and store data, ensuring efficient handling and retrieval of information from the server.",
+      "Secure Private Page and User Authentication: Implement a private page that requires user login, safeguarding sensitive content and ensuring personalized access for enhanced privacy and security.",
+      "Efficient Data Management with Express.js: Utilize Express.js to integrate a basic server and store data, ensuring efficient handling and retrieval of information from the server."
+    ],
+    "rating": 4.7,
+    "technology": [
+      "React",
+      "Express.js",
+      "MongoDB",
+      "Firebase Authentication",
+      "React Router",
+      "Tailwind CSS",
+      "Stripe"
+    ]
+  },
+  {
+    "projectName": "GrowYourCareer",
+    "projectImage": "https://i.postimg.cc/cCqhBCh7/screencapture-localhost-5174-2023-06-28-15-47-31.png",
+    "serverLink": "https://github.com/sakibmohammad79/job-application-website-assignment9",
+    "clientLink": "https://github.com/sakibmohammad79/job-application-website-assignment9",
+    "liveLink": "https://64783e667ec57f413ebf9d8b--aquamarine-starburst-9e0499.netlify.app/",
+    "features": [
+      "Feature 1",
+      "Feature 2",
+      "Feature 3"
+    ],
+    "rating": 4.3,
+    "technology": [
+      "React",
+      "Express.js",
+      "MongoDB",
+      "Firebase Authentication",
+      "React Router",
+      "Tailwind CSS",
+      "Stripe"
+    ]
+  },
+  {
+    "projectName": "JobSearch",
+    "projectImage": "https://i.postimg.cc/ryQz43ps/screencapture-localhost-5174-2023-06-28-16-22-08.png",
+    "serverLink": "https://github.com/sakibmohammad79/programming-web-ass8",
+    "clientLink": "https://github.com/sakibmohammad79/programming-web-ass8",
+    "liveLink": "https://resplendent-sfogliatella-8e8c65.netlify.app",
+    "features": [
+      "Feature 1",
+      "Feature 2",
+      "Feature 3"
+    ],
+    "rating": 4.6,
+    "technology": [
+      "React",
+      "Express.js",
+      "MongoDB",
+      "Firebase Authentication",
+      "React Router",
+      "Tailwind CSS",
+      "Stripe"
+    ]
+  },
+  {
+    "projectName": "BikeZone",
+    "projectImage": "https://i.postimg.cc/mgMbm5TQ/screencapture-127-0-0-1-5500-index-html-2023-06-28-16-05-05.png",
+    "serverLink": "https://github.com/sakibmohammad79/bike-zone",
+    "clientLink": "https://github.com/sakibmohammad79/bike-zone",
+    "liveLink": "https://sakibmohammad79.github.io/bike-zone/",
+    "features": [
+      "Feature 1",
+      "Feature 2",
+      "Feature 3"
+    ],
+    "rating": 4.4,
+    "technology": [
+      "React",
+      "Express.js",
+      "MongoDB",
+      "Tailwind CSS"
+    ]
+  }
+]

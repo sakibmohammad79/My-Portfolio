@@ -52,7 +52,7 @@ const Banner = () => {
         <div className="flex justify-center">
           <img
             style={{ height: "460px", width: "360px", borderRadius: '180px' }}
-            className="rounded-lg bg-[#4D245F] shadow-lg"
+            className="rounded-lg bg-[#4D245F] shadow-xl"
             src="https://i.postimg.cc/SNnXFgWH/DSC-0092-removebg-preview.png"
             alt=""
           />
