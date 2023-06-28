@@ -41,10 +41,10 @@ const Banner = () => {
           </p>
           <div className="flex gap-4 text-secondary">
 
-            <a href={linkedinProfileUrl} target="_blank" rel="noopener noreferrer"><FaLinkedin style={{width: '2.3rem', height: '2.3rem'}}/></a>
+            <a href={linkedinProfileUrl} target="_blank" rel="noopener noreferrer"><FaLinkedin style={{width: '2.2rem', height: '2.2rem'}}/></a>
 
-            <a href={gitHubProfileUrl} target="_blank" rel="noopener noreferrer"><FaGithubSquare style={{width: '2.3rem', height: '2.3rem'}}/></a>
-            <a href={facebookProfileUrl} target="_blank" rel="noopener noreferrer"><FaFacebook style={{width: '2.3rem', height: '2.3rem'}}/></a>
+            <a href={gitHubProfileUrl} target="_blank" rel="noopener noreferrer"><FaGithubSquare style={{width: '2.2rem', height: '2.2rem'}}/></a>
+            <a href={facebookProfileUrl} target="_blank" rel="noopener noreferrer"><FaFacebook style={{width: '2.2rem', height: '2.2rem'}}/></a>
             
           </div>
         </div>
