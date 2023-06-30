@@ -4,6 +4,7 @@ import Skill from "../Page/Skill/Skill";
 import Main from "../layout/Main";
 import Contact from "../Page/Contact/Contact";
 import Projects from "../Page/Projects/Projects";
+import ProjectDetails from "../Page/ProjectCard/ProjectDetails";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,11 @@ const router = createBrowserRouter([
         {
           path: '/contact',
           element: <Contact></Contact>
+        },
+        {
+          path: '/project/:id',
+          element: <ProjectDetails></ProjectDetails>,
+          loader: ({params}) => fetch(`http://localhost:5000/project/${params.id}`)
         }
       ]
     },

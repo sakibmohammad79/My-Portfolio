@@ -1,10 +1,14 @@
 const Contact = () => {
   return (
-    <div className="bg-[url('https://i.postimg.cc/fRh9jkB2/pexels-jakub-novacek-924824.jpg')] bg-cover bg-center min-h-screen">
-      <div className="px-6 md:px-24 pt-24 md:pt-28 pb-12">
-        <div className="">
-          <h3 className="text-3xl uppercase font-bold text-secondary text-center">
-            Contact Me
+    // <div className="bg-[url('https://i.postimg.cc/fRh9jkB2/pexels-jakub-novacek-924824.jpg')] bg-cover bg-center min-h-screen">
+    <div className="bg-[#052646]">
+      <div className="px-6 md:px-24 pt-24 md:pt-28 pb-24">
+        <div className="text-center">
+          <h3 className="text-white font-bold text-2xl uppercase">
+            contact me
+          </h3>
+          <h3 className="text-secondary font-bold text-3xl uppercase">
+            without hesitation
           </h3>
         </div>
         <div className="grid md:grid-cols-2 gap-4 pt-8">
@@ -46,7 +50,7 @@ const Contact = () => {
             <div className="form-control w-full">
               <label className="label">
                 <span className="label-text text-white font-bold uppercase">
-                 Subject*
+                  Subject*
                 </span>
               </label>
               <input
@@ -58,14 +62,20 @@ const Contact = () => {
 
             <div className="form-control">
               <label className="label">
-                <span className="label-text uppercase text-white font-bold">Your Message*</span>
+                <span className="label-text uppercase text-white font-bold">
+                  Your Message*
+                </span>
               </label>
               <textarea
                 className="textarea textarea-bordered h-24"
                 placeholder="Message"
               ></textarea>
             </div>
-            <input className="btn btn-secondary text-white w-full font-bold" type="submit" value="send message" />
+            <input
+              className="btn btn-secondary text-white w-full font-bold"
+              type="submit"
+              value="send message"
+            />
           </div>
         </div>
       </div>

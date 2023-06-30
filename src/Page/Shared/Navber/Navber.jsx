@@ -24,7 +24,7 @@ const Navber = () => {
 
    
     const handleDownloadResume = () => {
-      const resumeUrl = '/src/assets/Md Sakib_Mern Stack Developer(resume).pdf (2).pdf'; // Replace with the actual path to your resume file
+      const resumeUrl = '/src/assets/Md Sakib_Mern Stack Developer(resume).pdf (2).pdf'; 
   
       // Fetch the resume file
       fetch(resumeUrl)
@@ -68,7 +68,7 @@ const Navber = () => {
         <Link to="/" className="btn btn-ghost normal-case text-3xl md:text-5xl text-secondary font-bold">Portfolio</Link>
       </div>
       <div className="navbar-center hidden lg:flex">
-        <ul className="menu menu-horizontal px-1 text-secondary font-extrabold">{navItem}</ul>
+        <ul className="menu menu-horizontal px-1 font-extrabold">{navItem}</ul>
       </div>
       <div className="navbar-end ">
         <button onClick={handleDownloadResume} className="btn btn-outline btn-secondary font-bold">

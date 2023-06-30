@@ -13,12 +13,13 @@ const Projects = () => {
     },[])
     //console.log(projects);
     return (
-        <div className="bg-[url('https://i.postimg.cc/fRh9jkB2/pexels-jakub-novacek-924824.jpg')] bg-cover bg-center min-h-screen">
+        //<div className="bg-[url('https://i.postimg.cc/fRh9jkB2/pexels-jakub-novacek-924824.jpg')] bg-cover bg-center min-h-screen">
+        <div className="bg-[#041B31]">
         <div className="px-6 md:px-24 pt-24 md:pt-28 pb-8">
-         <div className="text-center pt-4">
-             <h3 className="font-bold text-3xl text-secondary">MY PROJECTS</h3>
-             <p className="text-white font-bold pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quos saepe, ut voluptatibus id aspernatur accusamus<br></br> tempore fugiat animi sint, consequatur, magni facilis? Quis esse, omnis minus deleniti repellendus earum!</p>
-            </div>
+        <div className="text-center">
+                 <h3 className="text-white font-bold text-2xl uppercase">my project</h3>
+                 <h3 className="text-secondary font-bold text-3xl uppercase">My Experience Area</h3>
+              </div>
 
             <div className="grid md:grid-cols-3 gap-8 md:gap-12 pt-12 md:pt-16 pb-12">
             {

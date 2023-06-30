@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
+
 // import "./ProjectCardCss.css";
 const ProjectCard = ({ project }) => {
-  const { projectName, projectImage, liveLink, clientLink, serverLink } = project;
+  const { projectName, projectImage, liveLink, clientLink, serverLink, _id } = project;
   //console.log(project);
   return (
     <div className="card w-90 bg-base-100 shadow-xl ">
@@ -13,19 +15,19 @@ const ProjectCard = ({ project }) => {
         />
       </figure>
       <div className="card-body">
-        <h2 className="card-title">
+        <h2 className="card-title font-bold">
           {projectName}
-          <div className="btn btn-sm btn-secondary">Details</div>
+          <Link to={`/project/${_id}`}><div  className="btn btn-sm btn-secondary">Details</div></Link>
         </h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
+        <p className="font-bold">Click the details button and see my complete project details at a glance!</p>
         <div className="card-actions justify-center">
-          <a href={clientLink} target="_blank" rel="noopener noreferrer" className="badge badge-secondary p-2">
+          <a href={clientLink} target="_blank" rel="noopener noreferrer" className="badge badge-secondary p-3">
             GitHub Client
           </a>
-          <a href={serverLink} target="_blank" rel="noopener noreferrer" className="badge badge-secondary p-2">
+          <a href={serverLink} target="_blank" rel="noopener noreferrer" className="badge badge-secondary p-3">
             GitHub Server
           </a>
-          <a href={liveLink} target="_blank" rel="noopener noreferrer" className="badge badge-secondary p-2">
+          <a href={liveLink} target="_blank" rel="noopener noreferrer" className="badge badge-secondary p-3">
             Live Link
           </a>
         </div>
