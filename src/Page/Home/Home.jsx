@@ -15,7 +15,7 @@ const Banner = () => {
     <div>
 
 <div className="bg-[#041D34]">
-      <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center px-6 md:px-24 pt-36 md:pt-40 pb-8">
+      <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center px-6 md:px-24 pt-36 md:pt-40 pb-12">
         <div className="space-y-3">
           <button className="btn text-white font-bold btn-secondary">
             Welcome To My Portfolio

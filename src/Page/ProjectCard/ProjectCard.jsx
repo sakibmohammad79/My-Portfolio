@@ -21,13 +21,13 @@ const ProjectCard = ({ project }) => {
         </h2>
         <p className="font-bold">Click the details button and see my complete project details at a glance!</p>
         <div className="card-actions justify-center">
-          <a href={clientLink} target="_blank" rel="noopener noreferrer" className="badge badge-secondary p-3">
+          <a href={clientLink} target="_blank" rel="noopener noreferrer" className="badge badge-secondary p-3 uppercase font-medium">
             GitHub Client
           </a>
-          <a href={serverLink} target="_blank" rel="noopener noreferrer" className="badge badge-secondary p-3">
+          <a href={serverLink} target="_blank" rel="noopener noreferrer" className="badge badge-secondary p-3 uppercase font-medium">
             GitHub Server
           </a>
-          <a href={liveLink} target="_blank" rel="noopener noreferrer" className="badge badge-secondary p-3">
+          <a href={liveLink} target="_blank" rel="noopener noreferrer" className="badge badge-secondary p-3 uppercase font-medium">
             Live Link
           </a>
         </div>

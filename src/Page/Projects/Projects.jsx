@@ -7,7 +7,7 @@ import ProjectCard from "../ProjectCard/ProjectCard";
 const Projects = () => {
     const [projects, setProjects] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/project')
+        fetch('https://my-portfolio-server-navy.vercel.app/project')
         .then(res => res.json())
         .then(data => setProjects(data))
     },[])

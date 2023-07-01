@@ -24,7 +24,7 @@ const Navber = () => {
 
    
     const handleDownloadResume = () => {
-      const resumeUrl = '/src/assets/Md Sakib_Mern Stack Developer(resume).pdf (2).pdf'; 
+      const resumeUrl = '/src/assets/Md Sakib_Mern Stack Developer(resume).pdf.pdf'; 
   
       // Fetch the resume file
       fetch(resumeUrl)
