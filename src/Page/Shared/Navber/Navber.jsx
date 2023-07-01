@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { saveAs } from 'file-saver';
 
 
+
 const Navber = () => {
     const navItem = (
         <>
@@ -24,19 +25,20 @@ const Navber = () => {
 
    
     const handleDownloadResume = () => {
-      const resumeUrl = '/src/assets/Md Sakib_Mern Stack Developer(resume).pdf.pdf'; 
+      const resumeUrl = "./Md Sakib_Mern Stack Developer(resume).pdf.pdf";
   
       // Fetch the resume file
       fetch(resumeUrl)
         .then((response) => response.blob())
         .then((blob) => {
           // Save the resume file using FileSaver.js
-          saveAs(blob, 'resume.pdf');
+          saveAs(blob, "resume.pdf");
         })
         .catch((error) => {
-          console.error('Error downloading the resume:', error);
+          console.error("Error downloading the resume:", error);
         });
     };
+   
 
     return (
         <div className="navbar pt-4 fixed md:pt-8 px-4 md:px-16 text-white">
