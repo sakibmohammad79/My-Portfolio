@@ -1,6 +1,7 @@
+import Slide from 'react-reveal/Slide';
 const Contact = () => {
   return (
-    // <div className="bg-[url('https://i.postimg.cc/fRh9jkB2/pexels-jakub-novacek-924824.jpg')] bg-cover bg-center min-h-screen">
+    
     <div className="bg-[#052646]">
       <div className="px-6 md:px-24 pt-24 md:pt-28 pb-24">
         <div className="text-center">
@@ -12,6 +13,7 @@ const Contact = () => {
           </h3>
         </div>
         <div className="grid md:grid-cols-2 gap-4 pt-8">
+          <Slide left>
           <div>
             <img
               className="rounded-lg shadow-lg mt-5"
@@ -20,6 +22,8 @@ const Contact = () => {
               alt=""
             />
           </div>
+          </Slide>
+          <Slide right>
           <div className="space-y-6">
             <div className="grid md:grid-cols-2 gap-4">
               <div className="form-control w-full">
@@ -77,6 +81,7 @@ const Contact = () => {
               value="send message"
             />
           </div>
+          </Slide>
         </div>
       </div>
     </div>

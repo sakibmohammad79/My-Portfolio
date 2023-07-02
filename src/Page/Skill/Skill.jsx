@@ -1,5 +1,8 @@
 
 import ProgressBar from "@ramonak/react-progress-bar";
+import Slide from 'react-reveal/Slide';
+
+
 const Skill = () => {
     return (
         //<div className="bg-[url('https://i.postimg.cc/fRh9jkB2/pexels-jakub-novacek-924824.jpg')] bg-cover bg-center min-h-screen">
@@ -11,6 +14,7 @@ const Skill = () => {
               </div>
             </div>
             <div className="grid md:grid-cols-2 gap-6 px-6 md:px-16 pb-8 md:pb-0 text-white font-bold">
+              <Slide left>
                 <div className="space-y-6">
                   <div >
                     <h2>HTML5</h2>
@@ -35,35 +39,37 @@ const Skill = () => {
                   <div>
                     <h2>REACT JS</h2>
                     <ProgressBar completed={70} maxCompleted={100} />
-                  </div>
-                  
+                  </div> 
                 </div>
+                  </Slide>
+                <Slide right>
                 <div className="space-y-6">
                   <div>
-                  <h2>FIREBASE</h2>
+                  <h2>FIREBASE AUTHENTICATION</h2>
+                  <ProgressBar completed={80} maxCompleted={100} />
+                  </div>
+                  <div>
+                  <h2>NODE JS</h2>
                   <ProgressBar completed={50} maxCompleted={100} />
                   </div>
                   <div>
                   <h2>EXPRESS JS</h2>
+                  <ProgressBar completed={70} maxCompleted={100} />
+                  </div>
+                  <div>
+                  <h2>AXIOS</h2>
+                  <ProgressBar completed={80} maxCompleted={100} />
+                  </div>
+                  <div>
+                  <h2>TANSTACK QUERY</h2>
                   <ProgressBar completed={60} maxCompleted={100} />
                   </div>
                   <div>
-                  <h2>EXPRESS JS</h2>
-                  <ProgressBar completed={60} maxCompleted={100} />
-                  </div>
-                  <div>
-                  <h2>EXPRESS JS</h2>
-                  <ProgressBar completed={60} maxCompleted={100} />
-                  </div>
-                  <div>
-                  <h2>EXPRESS JS</h2>
-                  <ProgressBar completed={60} maxCompleted={100} />
-                  </div>
-                  <div>
-                  <h2>EXPRESS JS</h2>
-                  <ProgressBar completed={60} maxCompleted={100} />
+                  <h2>JSON WEB TOKEN</h2>
+                  <ProgressBar completed={70} maxCompleted={100} />
                   </div>
                 </div>
+                </Slide>
             </div>
         </div>
     );

@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
-
+import Zoom from 'react-reveal/Zoom';
 // import "./ProjectCardCss.css";
 const ProjectCard = ({ project }) => {
   const { projectName, projectImage, liveLink, clientLink, serverLink, _id } = project;
   //console.log(project);
   return (
-    <div className="card w-90 bg-base-100 shadow-xl ">
+    <Zoom>
+      <div className="card w-90 bg-base-100 shadow-xl ">
       <figure>
         <img
           style={{ height: "300px" }}
@@ -33,6 +34,7 @@ const ProjectCard = ({ project }) => {
         </div>
       </div>
     </div>
+    </Zoom>
   );
 };
 

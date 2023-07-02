@@ -5,6 +5,7 @@ import Skill from "../Skill/Skill";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
 import Footer from "../Shared/Footer/Footer";
+import { Rotate } from "react-reveal";
 
 const Banner = () => {
   const linkedinProfileUrl = 'https://www.linkedin.com/in/md-sakib-067392278/'; 
@@ -16,6 +17,7 @@ const Banner = () => {
 
 <div className="bg-[#041D34]">
       <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center px-6 md:px-24 pt-36 md:pt-40 pb-12">
+        <Rotate top left>
         <div className="space-y-3">
           <button className="btn text-white font-bold btn-secondary">
             Welcome To My Portfolio
@@ -48,7 +50,8 @@ const Banner = () => {
             
           </div>
         </div>
-        <Jump>
+        </Rotate>
+        <Rotate top right>
         <div className="flex justify-center">
           <img
             style={{ height: "460px", width: "360px", borderRadius: '180px' }}
@@ -57,7 +60,7 @@ const Banner = () => {
             alt=""
           />
         </div>
-        </Jump>
+        </Rotate>
       </div>
     </div>
     <Skill></Skill>
