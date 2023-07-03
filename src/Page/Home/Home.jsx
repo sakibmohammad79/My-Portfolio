@@ -1,11 +1,11 @@
 import { FaFacebook, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import Typed from 'react-typed';
-import Jump from 'react-reveal/Jump';
 import Skill from "../Skill/Skill";
 import Projects from "../Projects/Projects";
 import Contact from "../Contact/Contact";
 import Footer from "../Shared/Footer/Footer";
 import { Rotate } from "react-reveal";
+import About from "../About/About";
 
 const Banner = () => {
   const linkedinProfileUrl = 'https://www.linkedin.com/in/md-sakib-067392278/'; 
@@ -16,7 +16,7 @@ const Banner = () => {
     <div>
 
 <div className="bg-[#041D34]">
-      <div className="grid md:grid-cols-2 gap-6 md:gap-8 items-center px-6 md:px-24 pt-36 md:pt-40 pb-12">
+      <div className="grid md:grid-cols-2 gap-8 items-center px-6 md:px-24 pt-36 md:pt-40 pb-16">
         <Rotate top left>
         <div className="space-y-3">
           <button className="btn text-white font-bold btn-secondary">
@@ -55,7 +55,7 @@ const Banner = () => {
         <div className="flex justify-center">
           <img
             style={{ height: "460px", width: "360px", borderRadius: '180px' }}
-            className="rounded-lg bg-[#20374D] shadow-xl"
+            className="rounded-lg bg-[#1D3246] shadow-xl"
             src="https://i.postimg.cc/SNnXFgWH/DSC-0092-removebg-preview.png"
             alt=""
           />
@@ -63,6 +63,7 @@ const Banner = () => {
         </Rotate>
       </div>
     </div>
+    <About></About>
     <Skill></Skill>
     <Projects></Projects>
     <Contact></Contact>

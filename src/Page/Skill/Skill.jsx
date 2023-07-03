@@ -6,7 +6,7 @@ import Slide from 'react-reveal/Slide';
 const Skill = () => {
     return (
         //<div className="bg-[url('https://i.postimg.cc/fRh9jkB2/pexels-jakub-novacek-924824.jpg')] bg-cover bg-center min-h-screen">
-        <div className="bg-[#052646] pb-24">
+        <div className="bg-[#041D34] pb-24">
             <div className="px-6 md:px-24 pt-24 md:pt-28 pb-8">
               <div className="text-center">
                  <h3 className="text-white font-bold text-2xl uppercase">Why Choose Me</h3>

@@ -2,7 +2,7 @@ import Slide from 'react-reveal/Slide';
 const Contact = () => {
   return (
     
-    <div className="bg-[#052646]">
+    <div className="bg-[#041D34]">
       <div className="px-6 md:px-24 pt-24 md:pt-28 pb-24">
         <div className="text-center">
           <h3 className="text-white font-bold text-2xl uppercase">

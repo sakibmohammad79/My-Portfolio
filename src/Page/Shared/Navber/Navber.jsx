@@ -9,7 +9,10 @@ const Navber = () => {
     const navItem = (
         <>
           <li>
-            <Link className="font-bold uppercase">Home</Link>
+            <Link to='/' className="font-bold uppercase">Home</Link>
+          </li>
+          <li>
+            <Link to='/about' className="font-bold uppercase">About me</Link>
           </li>
           <li>
             <Link to='/skill' className="font-bold uppercase">Skill</Link>
