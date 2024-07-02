@@ -15,7 +15,7 @@ const Banner = () => {
 
   return (
     <div>
-      <div className="bg-[#041D34]">
+      <div className="bg-[#041D34] h-screen">
         <div className="grid md:grid-cols-2 gap-8 items-center px-6 md:px-24 pt-36 md:pt-40 pb-16">
           <Rotate top left>
             <div className="space-y-3">
