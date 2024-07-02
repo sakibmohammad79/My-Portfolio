@@ -3,7 +3,7 @@ import Slide from "react-reveal/Slide";
 
 const Skill = () => {
   return (
-    <div className="bg-[#041D34] pb-24 h-screen">
+    <div className="bg-[#041D34] pb-24">
       <div className="px-6 md:px-24 pt-24 md:pt-28 pb-8">
         <div className="text-center">
           <h3 className="text-white font-bold text-2xl uppercase">

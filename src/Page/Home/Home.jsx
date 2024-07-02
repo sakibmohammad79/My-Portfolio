@@ -15,17 +15,17 @@ const Banner = () => {
 
   return (
     <div>
-      <div className="bg-[#041D34] h-screen">
+      <div className="bg-[#041D34]">
         <div className="grid md:grid-cols-2 gap-8 items-center px-6 md:px-24 pt-36 md:pt-40 pb-16">
           <Rotate top left>
             <div className="space-y-3">
               <button className="btn text-white font-bold btn-secondary shadow-none">
                 Welcome To My Portfolio
               </button>
-              <h2 className="font-bold text-3xl md:text-5xl text-white uppercase">
+              <h3 className="font-bold text-3xl md:text-5xl text-white uppercase">
                 Hay, I am Sakib <br></br>
                 <Typed
-                  className="text-secondary font-bold text-3xl md:text-4xl uppercase"
+                  className="text-secondary font-bold text-3xl  uppercase"
                   strings={["Full Stack Developer"]}
                   typeSpeed={80}
                   backSpeed={60}
@@ -34,7 +34,7 @@ const Banner = () => {
                   shuffle={true}
                   backDelay={1000}
                 />
-              </h2>
+              </h3>
               <p className="text-white font-medium ">
                 I am a dedicated and passionate MERN stack developer. I believe
                 in working hard and never giving up. Challenges motivate me, and

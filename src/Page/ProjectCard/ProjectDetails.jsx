@@ -1,4 +1,3 @@
-import { Rating } from "@smastrom/react-rating";
 import { useLoaderData } from "react-router-dom";
 
 const ProjectDetails = () => {
@@ -6,12 +5,11 @@ const ProjectDetails = () => {
   const {
     projectName,
     projectImage,
-    rating,
     features,
     clientLink,
     serverLink,
     liveLink,
-    technology
+    technology,
   } = projectDetails;
   console.log(projectDetails);
   return (
@@ -35,11 +33,11 @@ const ProjectDetails = () => {
           <p className="font-bold">3. {features[2]}</p>
           <h2 className="card-title text-2xl font-bold">Technology:</h2>
           <div className="flex">
-          <p className="font-bold">{technology[0]}| </p>
-          <p className="font-bold">{technology[1]}| </p>
-          <p className="font-bold">{technology[2]}| </p>
-          <p className="font-bold">{technology[3]}| </p>
-          <p className="font-bold">{technology[4]}</p>
+            <p className="font-bold">{technology[0]}| </p>
+            <p className="font-bold">{technology[1]}| </p>
+            <p className="font-bold">{technology[2]}| </p>
+            <p className="font-bold">{technology[3]}| </p>
+            <p className="font-bold">{technology[4]}</p>
           </div>
           <div className="card-actions justify-center pt-4">
             <a

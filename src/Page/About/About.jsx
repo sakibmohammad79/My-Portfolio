@@ -1,7 +1,7 @@
 import { Rotate } from "react-reveal";
 const About = () => {
   return (
-    <div className="bg-[#052646] h-screen">
+    <div className="bg-[#052646]">
       <div className="px-6 md:px-24 pt-24 md:pt-40 pb-24">
         <div className="grid grid-row-r md:grid-cols-2 gap-12 justify-center items-center">
           <Rotate top-left>
